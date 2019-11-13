@@ -1,0 +1,22 @@
+{
+  "name": "zen3",
+  "version": "1.0.0",
+  "description": "zen3 task",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "ranabir",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "express-session": "^1.17.0",
+    "is-empty": "^1.2.0",
+    "mongodb": "^3.3.4"
+  },
+  "devDependencies": {
+    "nodemon": "^1.19.4"
+  }
+}
