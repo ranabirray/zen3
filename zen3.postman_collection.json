@@ -1,0 +1,114 @@
+{
+	"info": {
+		"_postman_id": "77ef73aa-9245-4b7f-af63-7477b4f26601",
+		"name": "zen3",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Retrieve",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:7000/users/5dcbd492d275974b811e0e46",
+					"host": [
+						"localhost"
+					],
+					"port": "7000",
+					"path": [
+						"users",
+						"5dcbd492d275974b811e0e46"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"name\":\"Albert\",\"type\":[{\"name\":\"movies\",\"type\":\"Drama\", \"favourites\":\"Satya\"}, {\"name\":\"food\",\"type\":\"Indian\", \"favourites\":\"Dahi\"}]}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:7000",
+					"host": [
+						"localhost"
+					],
+					"port": "7000"
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"name\":\"pop\",\"type\":[{\"name\":\"movies\",\"type\":\"Drama\", \"favourites\":\"My Left Foot\"}, {\"name\":\"food\",\"type\":\"Indian\", \"favourites\":\"Biriyani\"}]}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:7000/users/5dcbd492d275974b811e0e46",
+					"host": [
+						"localhost"
+					],
+					"port": "7000",
+					"path": [
+						"users",
+						"5dcbd492d275974b811e0e46"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "localhost:7000/users/5dcbcfcb0b5a234895370890",
+					"host": [
+						"localhost"
+					],
+					"port": "7000",
+					"path": [
+						"users",
+						"5dcbcfcb0b5a234895370890"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
