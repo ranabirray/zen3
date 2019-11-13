@@ -1,0 +1,36 @@
+<script>
+  function pattern() {
+    line = "";
+    var arr = [1, 4, 9];
+
+    for (i = 0; i <= arr.length; i++) {
+      if (i == arr.length) {
+        for (j = 0; j < i; j++) line += " " + arr[j];
+        line += " " + 0;
+        for (j = i; j >= 1; j--) line += " " + arr[j - 1];
+      } else {
+        for (j = 1; j <= i; j++) line += " " + arr[j - 1];
+        line += " " + arr[i];
+        for (j = i; j >= 1; j--) line += " " + arr[j - 1];
+      }
+      line += "<br>";
+    }
+
+    for (i = arr.length - 1; i >= 0; i--) {
+      for (j = 1; j <= i; j++) line += " " + arr[j - 1];
+      line += " " + arr[i];
+      for (j = i; j >= 1; j--) line += " " + arr[j - 1];
+      line += "<br>";
+    }
+
+    document.getElementById("result").innerHTML = line;
+  }
+</script>
+<style>
+  #result {
+    text-align: center;
+  }
+</style>
+<body onload="pattern();">
+  <div id="result"></div>
+</body>
