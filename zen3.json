@@ -1,0 +1,2 @@
+{"_id":{"$oid":"5dcba255c9d4a57f541cbe59"},"name":"ravi","type":[{"name":"movies","type":"Drama, Action","favourites":"My Left Foot, The Godfather"},{"name":"food","type":"Chinese, Indian","favourites":"Noodle Soup, Biriyani"}]}
+{"_id":{"$oid":"5dcbd492d275974b811e0e46"},"name":"David","type":[{"name":"movies","type":"Drama","favourites":"My Left Foot"},{"name":"food","type":"Indian","favourites":"Biriyani"}]}
